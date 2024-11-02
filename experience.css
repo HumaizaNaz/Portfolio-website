@@ -96,16 +96,22 @@
     border: 0.1rem solid #b74b4b;
     padding: 2rem;
     border-radius: 1rem;
-    width: 30%;
+    width: 30%; /* Default width for larger screens */
     text-align: left;
     overflow: hidden;
+    transition: transform 0.3s ease; /* Add transition for scale effect */
+}
+
+/* Scale up the project card on hover */
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
 }
 
 .project img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
-    transition: 0.3s ease; /* Smooth transition for blur */
+    transition: filter 0.3s ease; /* Smooth transition for blur */
 }
 
 /* Apply blur to image on hover */
@@ -142,6 +148,27 @@
     font-size: 1.4rem;
     color: white;
     margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        width: 45%; /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 100%; /* Full width for mobile devices */
+    }
+
+    .project h3 {
+        font-size: 1.6rem; /* Smaller heading on mobile */
+    }
+
+    .project p {
+        font-size: 1.2rem; /* Smaller paragraph text on mobile */
+    }
 }
 
 /* Experience Details Section */
