@@ -1,0 +1,68 @@
+
+
+/* Skills Section */
+.skills {
+    padding: 5rem 9%;
+    text-align: center;
+    background-color: #000; /* Black background */
+}
+
+.skills h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white; /* Violet heading color */
+    margin-bottom: 2rem;
+}
+
+.skills h1 span {
+    color:  #b74b4b; /* Highlight for span element */
+}
+
+.skills p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Individual Skill Card */
+.skill-card {
+    background-color: #222; /* Dark background for skill cards */
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s; /* Add subtle scaling effect */
+}
+
+.skill-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Skill Bar */
+.skill-bar {
+    background-color: #444; /* Base color for skill bars */
+    border-radius: 5px;
+    height: 15px;
+    margin: 0.5rem 0;
+}
+
+.skill-level {
+    background-color: #b74b4b; /* Violet for skill level */
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: #111; /* Dark background for footer */
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+

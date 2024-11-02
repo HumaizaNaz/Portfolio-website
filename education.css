@@ -1,0 +1,118 @@
+
+/* Education Section */
+.education {
+    padding: 5rem 9%;
+    text-align: center;
+    background-color: black;
+}
+
+.education h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.education h1 span {
+    color: #b74b4b;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+.education p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Individual Education Item */
+.education-item {
+    background-color: #161616;
+    border-left: 4px solid #b74b4b;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effect */
+}
+
+.education-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.education-date {
+    font-size: 1.4rem;
+    color: #b74b4b;
+    margin-bottom: 0.5rem;
+}
+
+.education-content h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.education-content h4 {
+    font-size: 1.6rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.education-content p {
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.8;
+}
+
+/* Separator Line */
+.education-separator {
+    margin: 4rem auto; /* Centered with margin */
+    width: 80%; /* Set a width for the line */
+    border: 0; /* Remove default border */
+    border-top: 1px solid #b74b4b; /* Top border color */
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: #111;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .education-list {
+        gap: 2rem;
+    }
+
+    .education-item {
+        padding: 1.5rem;
+    }
+
+    .education h1 {
+        font-size: 3rem;
+    }
+
+    .education p {
+        font-size: 1.4rem;
+    }
+}

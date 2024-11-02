@@ -1,0 +1,157 @@
+/* Experience Page Specific Styles */
+.experience {
+    padding: 5rem 9%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.experience h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.experience h1 span,
+.experience h1 u {
+    color: #b74b4b;
+}
+
+.experience p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+/* Job Section Styling */
+.jobs {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.job {
+    background-color: #161616;
+    border: 0.1rem solid #b74b4b;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 45%;
+    text-align: left;
+}
+
+.job h3 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.job p {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
+    background-color: #b74b4b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Projects Section Styling */
+/* Project Container */
+/* Projects Section Styling */
+/* Projects Section Styling */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.project {
+    position: relative;
+    background-color: #1a1a1a;
+    border: 0.1rem solid #b74b4b;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: 0.3s ease; /* Smooth transition for blur */
+}
+
+/* Apply blur to image on hover */
+.project:hover img {
+    filter: blur(4px); /* Adjust blur strength as desired */
+}
+
+/* Eye Icon Styling */
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #b74b4b;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for appearance */
+    pointer-events: none;
+}
+
+/* Show eye icon on hover */
+.project:hover .eye-icon {
+    opacity: 1;
+}
+
+/* Additional Text Styling */
+.project h3 {
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.project p {
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+/* Experience Details Section */
+.experience-details {
+    margin-top: 5rem;
+}
+
+.experience-details p {
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
